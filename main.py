@@ -1,6 +1,6 @@
 from subprocess import run, PIPE
 
-from flask import logging, Flask, render_template, request
+from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
@@ -19,5 +19,4 @@ def audio():
 
 
 if __name__ == "__main__":
-    app.logger = logging.getLogger('audio-gui')
     app.run(debug=True)
